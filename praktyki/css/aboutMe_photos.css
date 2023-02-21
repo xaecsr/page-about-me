@@ -1,0 +1,73 @@
+.polaroid_photos {
+    float: right;
+    height: 70%;
+    width: 400px;
+}
+
+@media screen and (max-width: 1500px) {
+  .polaroid_photos {
+    width: 100%;
+    float: left;
+    height: auto;
+  }
+}
+
+.photo {
+    background: #ffffff;
+    padding: 15px 15px 50px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, .3);
+    transition: all .20s linear;
+  }
+
+  .photo:after {
+    color: #333;
+    font-size: 25px;
+    position: relative;
+  }
+
+  .polaroid_photos img {
+    display: block;
+  }
+
+  .photo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, .7);
+  }
+
+.first {
+    margin-top: 3%;
+    float: left;
+    position: relative;
+}
+
+.second {
+    margin-top: -15%;
+    float: right;
+    position: relative;
+}
+
+.third {
+    margin-top: -15%;
+    float: left;
+    position: relative;
+    height: 300px;
+}
+
+@media screen and (max-width: 1500px) {
+  .first, .second, .third {
+    float: left;
+    position: relative;
+    margin: 2% 0 0 5%;
+  }
+}
+@media screen and (max-width: 1500px) {
+  .first {
+    margin-top: 10%;
+  }
+}
+
+img {
+    width: 200px;
+    margin-top: 20px;
+}

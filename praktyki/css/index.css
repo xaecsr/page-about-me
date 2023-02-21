@@ -1,0 +1,51 @@
+h1 {
+    font-size: 75px;
+    margin: 0;
+}
+
+div {
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+.fucking-animation {
+    padding: 7%;
+}
+
+  .hello1 {
+    animation: showup 7s;
+  }
+
+  .hello2 {
+    width:0px;
+    animation: reveal 7s;
+    animation-fill-mode: forwards;
+  }
+
+  .hello2 span {
+    margin-left: -300px;
+    animation: slidein 7s;
+  }
+
+  @keyframes showup {
+      0% {opacity: 0;}
+      20% {opacity: 1;}
+      80% {opacity: 1;}
+      100% {opacity: 1;}
+  }
+
+  @keyframes slidein {
+      0% { margin-left: -500px; }
+      20% { margin-left: -500px; }
+      35% { margin-left: 0px; }
+      100% { margin-left: 0px; }
+  }
+
+  @keyframes reveal {
+      0% {opacity: 0; width: 0px;}
+      20% {opacity: 1; width: 0px;}
+      30% {width: 600px;}
+      80% {opacity: 1;}
+      100% {opacity: 1; width: 600px;}
+  }
